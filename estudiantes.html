@@ -1,1 +1,119 @@
-<h1>Pantalla Estudiantes</h1>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Estudiantes — SIESTUDIA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="flex bg-[#f6f9fc] h-screen font-sans text-gray-800">
+
+  <!-- Sidebar -->
+  <aside class="w-64 bg-[#001f3f] text-white flex flex-col py-4">
+    <nav class="flex-grow px-4 space-y-2">
+      <a href="#" class="flex items-center space-x-2 py-2 px-3 rounded hover:bg-blue-800">
+        <i class="fas fa-home"></i><span>Inicio</span>
+      </a>
+      <div class="space-y-1">
+        <div class="flex items-center space-x-2 py-2 px-3 font-semibold">
+          <i class="fas fa-clipboard-list"></i><span>Registro Académico</span>
+        </div>
+        <div class="ml-6 space-y-1">
+          <a href="#" class="block py-1 px-2 bg-blue-700 rounded">Estudiantes</a>
+          <a href="#" class="block py-1 px-2 hover:bg-blue-800 rounded">Profesores</a>
+          <a href="#" class="block py-1 px-2 hover:bg-blue-800 rounded">Matrículas</a>
+          <a href="#" class="block py-1 px-2 hover:bg-blue-800 rounded">Evaluaciones</a>
+          <a href="#" class="block py-1 px-2 hover:bg-blue-800 rounded">Control Disciplinario</a>
+        </div>
+      </div>
+      <a href="#" class="flex items-center space-x-2 py-2 px-3 rounded hover:bg-blue-800">
+        <i class="fas fa-cash-register"></i><span>Caja</span>
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Main -->
+  <main class="flex-1 p-6">
+    <h1 class="text-2xl font-semibold mb-4">Registro Académico / Estudiantes</h1>
+    <div class="bg-white p-4 rounded shadow">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-lg font-semibold">Estudiantes</h2>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+          + Agregar Estudiante
+        </button>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm text-left border-collapse">
+          <thead class="bg-blue-100 text-gray-700">
+            <tr>
+              <th class="px-4 py-2">Nombre</th>
+              <th class="px-4 py-2">Apellidos</th>
+              <th class="px-4 py-2">Fecha Nacimiento</th>
+              <th class="px-4 py-2">Género</th>
+              <th class="px-4 py-2">Teléfono</th>
+              <th class="px-4 py-2">Correo</th>
+              <th class="px-4 py-2">Alergias</th>
+              <th class="px-4 py-2">Enfermedades</th>
+              <th class="px-4 py-2">Dirección</th>
+              <th class="px-4 py-2">Tutor</th>
+              <th class="px-4 py-2">Acciones</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-800">
+            <tr class="border-t">
+              <td class="px-4 py-2">Miguel Julian</td>
+              <td class="px-4 py-2">Espinoza Vanegas</td>
+              <td class="px-4 py-2">2013-03-13</td>
+              <td class="px-4 py-2">M</td>
+              <td class="px-4 py-2">88888888</td>
+              <td class="px-4 py-2">banano@gmail.com</td>
+              <td class="px-4 py-2">--</td>
+              <td class="px-4 py-2">--</td>
+              <td class="px-4 py-2">Tipitapa, Ciudadela</td>
+              <td class="px-4 py-2">José Antonio Hernández Rivera</td>
+              <td class="px-4 py-2 space-x-2">
+                <i class="fas fa-pencil-alt text-orange-500 cursor-pointer"></i>
+                <i class="fas fa-trash text-gray-500 cursor-pointer"></i>
+              </td>
+            </tr>
+            <tr class="border-t">
+              <td class="px-4 py-2">Mariana de Jesús</td>
+              <td class="px-4 py-2">Flores Hernandez</td>
+              <td class="px-4 py-2">2013-03-01</td>
+              <td class="px-4 py-2">F</td>
+              <td class="px-4 py-2">87959541</td>
+              <td class="px-4 py-2">marinas@gmail.com</td>
+              <td class="px-4 py-2">Maní</td>
+              <td class="px-4 py-2">Diabetes Tipo 2</td>
+              <td class="px-4 py-2">Tipitapa, Ciudadela</td>
+              <td class="px-4 py-2">Ana Patricia Mendoza Ruiz</td>
+              <td class="px-4 py-2 space-x-2">
+                <i class="fas fa-pencil-alt text-orange-500 cursor-pointer"></i>
+                <i class="fas fa-trash text-gray-500 cursor-pointer"></i>
+              </td>
+            </tr>
+            <tr class="border-t">
+              <td class="px-4 py-2">Juan Pablo</td>
+              <td class="px-4 py-2">Jaramillo Vanegas</td>
+              <td class="px-4 py-2">2012-05-16</td>
+              <td class="px-4 py-2">M</td>
+              <td class="px-4 py-2">78484394</td>
+              <td class="px-4 py-2">juan@gmail.com</td>
+              <td class="px-4 py-2">Picaduras de insectos</td>
+              <td class="px-4 py-2">--</td>
+              <td class="px-4 py-2">Tipitapa, Ciudadela</td>
+              <td class="px-4 py-2">Erick Alejandro Rivas Campos</td>
+              <td class="px-4 py-2 space-x-2">
+                <i class="fas fa-pencil-alt text-orange-500 cursor-pointer"></i>
+                <i class="fas fa-trash text-gray-500 cursor-pointer"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
